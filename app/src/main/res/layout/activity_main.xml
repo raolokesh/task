@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Wrap RecyclerView with ScrollView to allow scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- RecyclerView inside ScrollView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Add More Button at the bottom -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add More"
+        android:textSize="18dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center" />
+</LinearLayout>
