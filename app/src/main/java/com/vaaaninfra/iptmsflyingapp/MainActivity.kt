@@ -60,9 +60,9 @@ class MainActivity : AppCompatActivity() {
             // Add a new empty item to the list and notify the adapter
             stateCityList.add(StateCityModel())
             adapter.notifyItemInserted(stateCityList.size - 1)
-            binding.recyclerView.post {
-                binding.recyclerView.smoothScrollToPosition(stateCityList.size - 1)
-            }
+//            binding.recyclerView.post {
+//                binding.recyclerView.smoothScrollToPosition(stateCityList.size - 1)
+//            }
         }
 
     }
